@@ -1,0 +1,15 @@
+<body>
+    <h1 style="text-align: center">Aplikasi Chat Sederhana</h1>
+      <div class="container">
+          {{#each chats}}
+              {{> tabelchat}}
+          {{/each}}
+      </div>
+  </body>
+
+  <template name="tabelchat">
+      <div class="card card-block">
+          <h4 class="card-title">{{nama}} | {{waktu}}</h4>
+          <p class="card-text">{{pesan}}</p>
+      </div>
+  </template>
